@@ -1,0 +1,102 @@
+<script>
+  // lesson 37
+  //   var courses = new Array("menjahit", "berenang", "memasak");
+  //   document.write(courses[1]);
+  //   courses[1] = "menyanyi";
+  //   document.write(courses[1]);
+
+  //   lesson 38
+  //   var courses = new Array(3);
+  //   courses[0] = "menjahit";
+  //   courses[1] = "berenang";
+  //   courses[2] = "memasak";
+
+  //   var courses = new Array();
+  //   courses[0] = "menjahit";
+  //   courses[1] = "memasak";
+  //   courses[2] = "menyanyi";
+  //   courses[3] = "berenang";
+
+  //   lesson 39
+
+  //   var menu = ["mie ayam", "bakso", "nasi goreng"];
+  //   var courses = ["menjahit", "berenang", "memanah"];
+  //   var concatArray = courses.concat(menu);
+  //   document.write(concatArray);
+  //   var person = {
+  //     name: "john",
+  //     age: 32,
+  //   };
+
+  //   var person2 = [];
+  //   var a = (person2["name"] = "john");
+  //   var b = (person2["age"] = 32);
+
+  //   document.write(a);
+  //   document.write(b);
+  //   document.write(person["name"]);
+  //   document.writeln(person["age"]);
+
+  // lesson 41
+  //   document.write(Math.PI);
+  //   var random = Math.floor(Math.random() * 10);
+  //   var random2 = Math.ceil(Math.random() * 10);
+  //   document.write(random + "<br>");
+  //   document.write(random2 + "<br>");
+
+  // function main() {
+  //   var year = 2005;
+
+  //   //the output
+  //   document.write(calcCent(year));
+  // }
+
+  // //complete the function
+  // function calcCent(x) {
+  //   return Math.ceil(x / 100);
+  // }
+  // main();
+
+  // var n = prompt("Masukkan bilangan : ");
+  // var answer = Math.sqrt(n);
+  // alert(`nilai dari akar kuadrat bilangan ${n} adalah ${answer}`);
+
+  //   var r = prompt("Masukkan panjang jari-jari : ");
+  //   var t = prompt("Masukkan tinggi tabung : ");
+  //   // var phi = 3.14;
+  //   var answer = Math.PI * Math.pow(r, 2) * t;
+  //   alert(`Luas volume tabung adalah ${Math.ceil(answer)}cm3`);
+
+  // lesson 42
+  // var date = new Date();
+  // console.log(date.getDate());
+  // setInterval(, 3000);
+  // setInterval(() => {
+  //   alert(Text());
+  // }, 3000);
+  //   function printTime() {
+  //     var d = new Date();
+  //     var hours = d.getHours();
+  //     var mins = d.getMinutes();
+  //     var secs = d.getSeconds();
+  //     document.body.innerHTML = hours + ":" + mins + ":" + secs;
+  //   }
+  //   setInterval(printTime, 1000);
+
+  function main() {
+    var year = 2005;
+    var month = 5;
+    var day = 22;
+
+    console.log(getWeekDay(year, month, day));
+  }
+
+  function getWeekDay(year, month, day) {
+    var names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var d = new Date(year, month, day);
+    //complete the function
+    return names[d.getDay()];
+  }
+
+  main();
+</script>

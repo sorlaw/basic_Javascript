@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handler</title>
+  </head>
+  <body>
+    <input type="text" id="name" onchange="change()" />
+
+    <button id="tanggal">Tanggal</button>
+    <button id="button">Click me!</button>
+    <script>
+      var btn = document.getElementById("button");
+      var dateBtn = document.getElementById("tanggal");
+
+      dateBtn.onclick = () => {
+        var d = new Date();
+        var para = document.createElement("h1");
+        var txt = document.createTextNode(d);
+        para.appendChild(txt);
+
+        document.body.appendChild(para);
+      };
+      btn.addEventListener("click", () => alert("Welcome" + x.value));
+
+      var x = document.getElementById("name");
+      function change() {
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>

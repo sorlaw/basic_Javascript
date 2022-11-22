@@ -1,0 +1,43 @@
+<script>
+  //   function kopi(merek, gula, air) {
+  //     this.merek = merek;
+  //     this.gula = gula;
+  //     this.air = air;
+  //   }
+
+  //   var kopiSaya = new kopi("Kapal api", "3 sendok teh", "200ml");
+  //   console.log(kopiSaya.gula);
+
+  //   function Person(name, age, favColor) {
+  //     this.name = name;
+  //     this.age = age;
+  //     this.favColor = favColor;
+  //     this.changeName = function (name) {
+  //       this.name = name;
+  //     };
+  //     this.changeAge = function (age) {
+  //       this.age = age;
+  //     };
+  //     this.changeFavColor = function (color) {
+  //       this.favColor = color;
+  //     };
+  //   }
+
+  //   var john = new Person("John", 25, "blue");
+  //   console.log(john.name);
+  //   john.changeName("Asep");
+
+  //   console.log(john.name);
+  function Bilangan(x, y) {
+    this.x = x;
+    this.y = y;
+    this.jumlah = function (x, y) {
+      var c = x + y;
+      return c;
+    };
+  }
+
+  var angka = new Bilangan(3, 1);
+  var b = angka.jumlah(angka.x, angka.y);
+  console.log(b);
+</script>

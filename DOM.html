@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <p class="paragraf">paragraf 1</p>
+    <p class="paragraf">paragraf 2</p>
+    <p class="paragraf">paragraf 3</p>
+    <!-- // lesson 47
+        //finds element by id
+        document.getElementById(id) 
+
+        //finds elements by class name
+        document.getElementsByClassName(name) 
+
+        //finds elements by tag name
+        document.getElementsByTagName(name) -->
+    <script>
+      //   var demo = document.getElementById("demo");
+      //   demo.innerText = "Hello World";
+      //   demo.style.background = "red";
+      //   demo.style.padding = "10px";
+      var para = document.getElementsByClassName("paragraf");
+
+      setInterval(() => {
+        para[0].style.backgroundColor = "blue";
+        para[1].style.backgroundColor = "red";
+        para[2].style.backgroundColor = "green";
+
+        setTimeout(() => {
+          for (let i = 0; i < para.length; i++) {
+            const element = para[i];
+            element.style.backgroundColor = "black";
+            element.style.color = "white";
+          }
+        }, 500);
+      }, 1000);
+    </script>
+  </body>
+</html>
